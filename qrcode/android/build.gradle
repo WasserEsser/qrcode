@@ -39,9 +39,12 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+    
+    //buildToolsVersion '28.0.3' // Older versions may give compile errors
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "com.journeyapps:zxing-android-embedded:3.5.0"
+    implementation "com.journeyapps:zxing-android-embedded:4.1.0"
+    implementation "androidx.appcompat:appcompat:1.0.2"
 }
